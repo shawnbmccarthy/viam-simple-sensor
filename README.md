@@ -22,10 +22,13 @@ to create custom sensors.
 
 1. log into [app.viam.com](https://app.viam.com)
 2. access the robot you configured, and go to the remotes tab
+
 ![configure_remotes.png](images%2Fconfigure_remotes.png)
 
 3. give the remote a name, for this example lets use `simple-sensor`, next select `Create Remote`, this will show the next page:
+
 ![configure_remotes_2.png](images%2Fconfigure_remotes_2.png)
+
 4. in the `Heading Info` text box enter `localhost:9090`, this is the default binding that [sensor_remotes.py](sensor_remotes.py) is configured for. Now click `Save Config` at the bottom of the page, a confirmation message will appear.
 
 Now that we have created our remote resource, we can start our proces
