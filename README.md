@@ -47,6 +47,10 @@ here we can select `Get All Readings` to see the output
 
 To see how the code works view: [static_sensor.py](sample_sensors%2Fstatic_sensor.py) and [sensor_remotes.py](sensor_remotes.py)
 
+## Further activities
+We can also configure our viam server to manage the remote process, ensuring that when viam server is running the remote server
+will also run. 
+
 # contact
 
 For any questions, please email me at: [shawn@viam.com](mailto:shawn@viam.com)
