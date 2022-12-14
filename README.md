@@ -47,6 +47,26 @@ here we can select `Get All Readings` to see the output
 
 To see how the code works view: [static_sensor.py](sample_sensors%2Fstatic_sensor.py) and [sensor_remotes.py](sensor_remotes.py)
 
+### script usage
+Below are the options that can be used 
+
+```shell
+./sensor_remotes.sh -h
+usage: sensor_remotes.py [-h] [--host HOST] [--port PORT] [--log {DEBUG,INFO,WARNING,ERROR,FATAL}]
+
+options:
+  -h, --help            show this help message and exit
+  --host HOST, -n HOST  hostname/ip rpc server will bind to
+  --port PORT, -p PORT  port number to store
+  --log {DEBUG,INFO,WARNING,ERROR,FATAL}, -l {DEBUG,INFO,WARNING,ERROR,FATAL}
+                        log level to use
+
+```
+With no options the defaults are:
+* host = localhost 
+* port = 9090
+* log = WARNING
+
 ## Further activities
 We can also configure our viam server to manage the remote process, ensuring that when viam server is running the remote server
 will also run. 
