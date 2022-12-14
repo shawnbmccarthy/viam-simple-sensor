@@ -29,6 +29,27 @@ to create custom sensors.
 4. in the `Heading Info` text box enter `localhost:9090`, this is the default binding that [sensor_remotes.py](sensor_remotes.py) is configured for. Now click `Save Config` at the bottom of the page, a confirmation message will appear.
 
 Now that we have created our remote resource, we can start our proces
+```shell
+# run from viam-simple-sensor
+./sensor_remotes.sh -l DEBUG
+
+```
+This will start a remote process with `DEBUG` log level. By default, only `WARNING` and above are logged, you should see
+the output below:
+```shell
+2022-12-14 01:08:42,088         INFO    viam.rpc.server (server.py:81)  Serving on localhost:9090   
+```
+
+Now go back to [app.viam.com](https://app.viam.com) and select the `Control` tab of your robot and select `Sensors`, 
+here we can select `Get All Readings` to see the output
+
+![control_view.png](images%2Fcontrol_view.png)
+
+To see how the code works view: [static_sensor.py](sample_sensors%2Fstatic_sensor.py) and [sensor_remotes.py](sensor_remotes.py)
+
+# contact
+
+For any questions, please email me at: [shawn@viam.com](mailto:shawn@viam.com)
 
 # References
 1. [viam](https://viam.com)
